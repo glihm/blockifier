@@ -21,6 +21,7 @@ macro_rules! retdata {
     };
 }
 
+#[cfg_attr(feature = "clone", derive(Clone))]
 #[cfg_attr(test, derive(Clone))]
 #[derive(Debug, Default, Eq, PartialEq)]
 pub struct OrderedEvent {
@@ -28,6 +29,7 @@ pub struct OrderedEvent {
     pub event: EventContent,
 }
 
+#[cfg_attr(feature = "clone", derive(Clone))]
 #[cfg_attr(test, derive(Clone))]
 #[derive(Debug, Default, Eq, PartialEq)]
 pub struct MessageToL1 {
@@ -35,6 +37,7 @@ pub struct MessageToL1 {
     pub payload: L2ToL1Payload,
 }
 
+#[cfg_attr(feature = "clone", derive(Clone))]
 #[cfg_attr(test, derive(Clone))]
 #[derive(Debug, Default, Eq, PartialEq)]
 pub struct OrderedL2ToL1Message {
@@ -43,6 +46,7 @@ pub struct OrderedL2ToL1Message {
 }
 
 /// Represents the effects of executing a single entry point.
+#[cfg_attr(feature = "clone", derive(Clone))]
 #[cfg_attr(test, derive(Clone))]
 #[derive(Debug, Default, Eq, PartialEq)]
 pub struct CallExecution {
@@ -54,6 +58,8 @@ pub struct CallExecution {
 }
 
 /// Represents the full effects of executing an entry point, including the inner calls it invoked.
+#[cfg_attr(feature = "clone", derive(Clone))]
+#[cfg_attr(test, derive(Clone))]
 #[derive(Debug, Default, Eq, PartialEq)]
 pub struct CallInfo {
     pub call: CallEntryPoint,
