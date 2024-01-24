@@ -903,9 +903,9 @@ dependencies = [
 
 [[package]]
 name = "cairo-lang-syntax-codegen"
-version = "2.5.0-dev.1"
+version = "2.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "32c7c3674f737bff4bd9657ff5c8dc6f42a1dd7c6bc9dac3e25a33b67d2137dc"
+checksum = "caa5e57952da2c330df7e63181d57b80e639096e061dff2c30730b7f7a124dda"
 dependencies = [
  "genco",
  "xshell",
