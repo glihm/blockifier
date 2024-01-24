@@ -58,3 +58,7 @@ future-incompatible = "deny"
 nonstandard-style = "deny"
 rust-2018-idioms = "deny"
 unused = "deny"
+
+[patch.crates-io]
+cairo-felt = { git = "https://github.com/glihm/cairo-vm.git", tag = "v0.9.2-saya" }
+cairo-vm = { git = "https://github.com/glihm/cairo-vm.git", tag = "v0.9.2-saya" }
